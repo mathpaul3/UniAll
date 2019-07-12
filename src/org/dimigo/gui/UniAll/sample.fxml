@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.UniAll.Controller">
+   <children>
+      <AnchorPane fx:id="Win1AP" layoutX="117.0" layoutY="105.0" prefHeight="209.0" prefWidth="794.0" style="-fx-border-color: Black; -fx-background-color: Light20%Gray;">
+         <children>
+
+      
+                  <Label fx:id="estType" layoutX="32.0" layoutY="94.0" text="설립유형">
+               <font>
+                  <Font name="Arial Unicode MS" size="15.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+            <CheckBox fx:id="pri" layoutX="192.0" layoutY="120.0" mnemonicParsing="false" text="사립" />
+            <CheckBox fx:id="pub" layoutX="112.0" layoutY="120.0" mnemonicParsing="false" text="공립" />
+            <CheckBox fx:id="nat" layoutX="32.0" layoutY="120.0" mnemonicParsing="false" text="국립" />
+
+      
+                  <Label fx:id="region" layoutX="32.0" layoutY="14.0" text="지역">
+               <font>
+                  <Font name="Arial Unicode MS" size="15.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+            <CheckBox fx:id="Gangwon" layoutX="32.0" layoutY="40.0" mnemonicParsing="false" text="강원" />
+            <CheckBox fx:id="Gyeonggi" layoutX="112.0" layoutY="40.0" mnemonicParsing="false" text="경기" />
+            <CheckBox fx:id="Gyeongnam" layoutX="192.0" layoutY="40.0" mnemonicParsing="false" text="경남" />
+            <CheckBox fx:id="Gyeongbuk" layoutX="272.0" layoutY="40.0" mnemonicParsing="false" text="경북" />
+            <CheckBox fx:id="Gwangju" layoutX="352.0" layoutY="40.0" mnemonicParsing="false" text="광주" />
+            <CheckBox fx:id="Daegu" layoutX="432.0" layoutY="40.0" mnemonicParsing="false" text="대구" />
+            <CheckBox fx:id="Daejeon" layoutX="512.0" layoutY="40.0" mnemonicParsing="false" text="대전" />
+            <CheckBox fx:id="Busan" layoutX="592.0" layoutY="40.0" mnemonicParsing="false" text="부산" />
+            <CheckBox fx:id="Sejong" layoutX="32.0" layoutY="67.0" mnemonicParsing="false" text="세종" />
+            <CheckBox fx:id="Ulsan" layoutX="112.0" layoutY="67.0" mnemonicParsing="false" text="울산" />
+            <CheckBox fx:id="Incheon" layoutX="192.0" layoutY="67.0" mnemonicParsing="false" text="인천" />
+            <CheckBox fx:id="Jeonnam" layoutX="272.0" layoutY="67.0" mnemonicParsing="false" text="전남" />
+            <CheckBox fx:id="Jeonbuk" layoutX="352.0" layoutY="67.0" mnemonicParsing="false" text="전북" />
+            <CheckBox fx:id="Jeju" layoutX="432.0" layoutY="67.0" mnemonicParsing="false" text="제주" />
+            <CheckBox fx:id="Chungnam" layoutX="512.0" layoutY="67.0" mnemonicParsing="false" text="충남" />
+            <CheckBox fx:id="Chungbuk" layoutX="592.0" layoutY="67.0" mnemonicParsing="false" text="충북" />
+            <CheckBox fx:id="Seoul" layoutX="672.0" layoutY="40.0" mnemonicParsing="false" text="서울" />
+
+      
+                  <Label fx:id="Gubun" layoutX="32.0" layoutY="146.0" text="구분">
+               <font>
+                  <Font name="Arial Unicode MS" size="15.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+
+                  <CheckBox fx:id="unicol" layoutX="112.0" layoutY="171.0" mnemonicParsing="false" text="대학(4년제)">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </CheckBox>
+
+                  <CheckBox fx:id="tec" layoutX="32.0" layoutY="171.0" mnemonicParsing="false" text="전문대학" />
+            <Button fx:id="btnSearch" layoutX="616.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleSearchAction" prefHeight="47.0" prefWidth="86.0" style="-fx-background-color: White; -fx-background-radius: 10pt; -fx-border-color: Orange; -fx-border-radius: 10pt;" text="조회" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+
+            <Label fx:id="lbl_hello" layoutX="37.0" layoutY="18.0" text="Hmm.." />
+      <Button fx:id="btn_click" layoutX="94.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAction" text="teresting" />
+
+      
+            <Label fx:id="Win1L" layoutX="137.0" layoutY="43.0" text="Search Your School!">
+         <font>
+            <Font size="41.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.026717554521924668" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="MAGENTA" offset="0.00000000000000001" />
+                  <Stop color="#8000ff" offset="0.1" />
+                  <Stop color="BLUE" offset="0.2" />
+                  <Stop color="#0080ff" offset="0.3" />
+                  <Stop color="AQUA" offset="0.4" />
+                  <Stop color="#00ff80" offset="0.5" />
+                  <Stop color="LIME" offset="0.6" />
+                  <Stop color="#80ff00" offset="0.7" />
+                  <Stop color="YELLOW" offset="0.8" />
+                  <Stop color="#ff8000" offset="0.9" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+
+      
+            <Button fx:id="SearchbyName" layoutX="610.0" layoutY="50.0" mnemonicParsing="false" onAction="#changeWindow" prefHeight="33.0" prefWidth="303.0" style="-fx-border-color: #46dc8c; -fx-background-color: White;" text="대학 검색하기" textAlignment="CENTER" textFill="#46dc8c">
+         <font>
+            <Font name="Headline R" size="18.0" />
+         </font>
+      </Button>
+
+      
+            <TableView fx:id="univTableView" layoutX="117.0" layoutY="330.0" prefHeight="292.0" prefWidth="794.0">
+        <columns>
+          <TableColumn prefWidth="156.80003356933594" text="대학명" />
+          <TableColumn prefWidth="56.7999267578125" text="캠퍼스" />
+            <TableColumn prefWidth="76.0" text="학교유형" />
+            <TableColumn prefWidth="92.0" text="학교구분" />
+            <TableColumn prefWidth="235.2000732421875" text="소재지" />
+            <TableColumn prefWidth="89.5999755859375" text="설립유형" />
+            <TableColumn prefWidth="89.20001220703125" text="학교 사이트" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
